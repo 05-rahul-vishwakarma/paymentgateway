@@ -2,6 +2,8 @@ const bodyParser = require('body-parser');
 const express = require('express');
 const cors = require('cors');
 const rozarpay = require('./routes/rozarpay/rozarpay');
+const authRoutes = require('./routes/authRoutes/authRoutes')
+const dotenv = require('dotenv').config;
 
 const app = express();
 const port = 3500;
@@ -29,7 +31,8 @@ app.options('*', cors({
     allowedHeaders: "Content-Type , Authorization",
 }));
 
-app.use('', rozarpay)
+app.use('', rozarpay);
+app.use('', authRoutes);
 
 app.listen(port, () => {
     console.log(`server is running ${port}`);
