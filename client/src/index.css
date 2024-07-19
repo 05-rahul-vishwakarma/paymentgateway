@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input{
+    outline: none;
+}
+
+/* src/App.css */
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #3399cc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #287a99;
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  @media (max-width: 600px) {
+    button {
+      width: 100%;
+      font-size: 18px;
+      padding: 15px 0;
+    }
+  }
+  
