@@ -49,7 +49,7 @@ function Form() {
         <div className='h-full backdrop:blur-sm flex flex-col items-center justify-center pt-[2rem] overflow-hidden ' >
             <h1 className='flex justify-start mt-3  text-2xl w-[92%] text-white ' ><p className='pl-1 pr-4 font-semibold ' >Welcome Back</p></h1>
             <div className=' h-[95%]  w-[95%] grid place-items-center rounded-lg'>
-                <div className='border-2 border-purple-500' >
+                <div className='border-2 border-[#4d26d7] ' >
                     {!otpSent ? (
                         <form onSubmit={handleSubmit(sendOtp)}>
                             <div className=' flex ' >

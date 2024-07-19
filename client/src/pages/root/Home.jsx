@@ -143,7 +143,6 @@ function Home() {
       const response = await axios.get(`/getPaymentDetails/?id=${data.paymentId}`);
       setPaymentData(response?.data);
       setMessage('');
-      reset();
     } catch (error) {
       setMessage('Error fetching payment data');
       setPaymentData(null);
@@ -222,13 +221,13 @@ const styles = {
     padding: '10px',
     marginRight: '10px',
     borderRadius: '5px',
-    border: '1px solid #ccc',
+    border: '1px solid #4d26d7',
   },
   button: {
     padding: '10px 20px',
     borderRadius: '5px',
     border: 'none',
-    backgroundColor: '#007bff',
+    backgroundColor: '#4d26d7',
     color: '#fff',
     cursor: 'pointer',
   },
